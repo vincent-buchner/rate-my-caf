@@ -1,4 +1,3 @@
-import { buildQueries } from "@testing-library/react";
 import { PieChart } from "react-minimal-pie-chart";
 
 function CafPieChart() {
