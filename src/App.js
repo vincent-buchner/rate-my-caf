@@ -12,11 +12,11 @@ function App() {
     <>
       <CafNavBar />
       <HeadingTextWithDate date="Friday, March 25th" />
-      <Row>
+
         <div className="chart-container">
           <CafPieChart />
         </div>
-      </Row>
+
       
     </>
     

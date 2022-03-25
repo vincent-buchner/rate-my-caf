@@ -3,9 +3,15 @@
   src: url(./assets/fonts/mount_hills/Mount\ Hills.otf);
 }
 
+@font-face {
+  font-family: mont_bold;
+  src: url(./assets/fonts/Mont-HeavyDEMO.otf);
+}
+
 .chart-container {
   height: 700px;
-  width: 700px;
+  width: 100%;
+  padding: 0;
 
   margin-left: auto;
   margin-right: auto;
