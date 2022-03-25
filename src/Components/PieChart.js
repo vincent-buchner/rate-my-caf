@@ -7,6 +7,7 @@ function CafPieChart() {
             <PieChart
                 label={(props) => {return props.dataEntry.title}}
                 labelStyle={{fontSize: "5px"}}
+                radius={35}
                 data={[
                     {title: "Object 1", value: 10, color: '#E38627'},
                     {title: "Object 2", value: 20, color: '#C13C37'},
