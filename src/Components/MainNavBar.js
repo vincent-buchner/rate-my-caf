@@ -21,10 +21,7 @@ function CafNavBar() {
                     </Nav>
                     <Nav>
                         <Nav.Link href="#deets">
-                            <Button variant='outline-primary'>Sign Up</Button>
-                        </Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
-                            <Button variant='outline-secondary'>Log In</Button>
+                            <Button variant='outline-primary'>SUBMIT REVIEW</Button>
                         </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

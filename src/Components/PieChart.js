@@ -11,6 +11,9 @@ function CafPieChart() {
                 center={[50, 50]}
                 viewBoxSize={[100, 100]}
                 labelPosition={70}
+                animate={true}
+                animationDuration={1000}
+                animationEasing={"ease-out"}
                 data={[
                     {key: 1, value: 5, color: '#0083e2'},
                     {key: 2, value: 10, color: '#0079d1'},
@@ -22,7 +25,7 @@ function CafPieChart() {
 
             {/* DATA SCALE */}
             <div className="d-flex justify-content-center">
-                <div style={{height: "50px", width: "300px", backgroundColor: "#D3D3D3", borderRadius: "10px"}}>
+                <div style={{height: "fit-content", width: "300px", backgroundColor: "#D3D3D3", borderRadius: "10px"}}>
                     <Container fluid>
                         <Row>
                             <Col className="d-flex justify-content-between">
@@ -31,9 +34,12 @@ function CafPieChart() {
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
-                                
-                                <span style={{width: "20px", height: "20px", backgroundColor: '#0083e2', }}/>
+                            <Col className="d-flex justify-content-around align-items-center py-2">
+                                <span style={{width: "20px", height: "20px", backgroundColor: '#005a9c', borderRadius: "3px" }}/>
+                                <span style={{width: "20px", height: "20px", backgroundColor: '#0064ad', borderRadius: "3px" }}/>
+                                <span style={{width: "20px", height: "20px", backgroundColor: '#0072c5', borderRadius: "3px" }}/>
+                                <span style={{width: "20px", height: "20px", backgroundColor: '#0079d1', borderRadius: "3px" }}/>
+                                <span style={{width: "20px", height: "20px", backgroundColor: '#0083e2', borderRadius: "3px" }}/>
                             </Col>
                         </Row>
                     </Container>
