@@ -4,7 +4,7 @@ function CafPieChart() {
     return(
         <>
             <PieChart
-                label={(props) => {return props.dataEntry.title}}
+                label={(props) => {return props.dataEntry.value}}
                 labelStyle={{fontSize: "3px", fontWeight: 600, fill: "#ffffff"}}
                 radius={20}
                 center={[25, 25]}
