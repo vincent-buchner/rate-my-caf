@@ -6,8 +6,13 @@ function HeadingTextWithDate() {
     let currentDate = Date().toLocaleString();
     
     function mealTime() {
+        // Breakfast Starts at 6
         const breakfastStarts = 6 * 60;
+
+        // Lunch Starts at 11:30
         const lunchStarts = 11 * 60 + 30;
+
+        // Dinner Starts 3:30(15:30)
         const dinnerStarts = 15 * 60 + 30;
         const funnyMessageStarts = 24 * 60;
 
