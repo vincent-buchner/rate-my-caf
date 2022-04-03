@@ -27,8 +27,8 @@ function ScatterPlots() {
     return (
         <>
             <Container fluid>
-                <Row className="m-0" style={{ height: "fit-content" }}>
-                        <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
+                <Row className="m-0" >
+                        <Col md={6} style={{ height: "500px" }} className="d-flex flex-column justify-content-center align-items-center">
                             <h1 style={{ fontFamily: "mont_bold" }}>Ratings Over Time</h1>
                             <ResponsiveContainer width="100%" height="90%">
                                 <ScatterChart
@@ -61,10 +61,6 @@ function ScatterPlots() {
                                 </BarChart>
                             </ResponsiveContainer>
                         </Col>
-                </Row>
-                <Row>
-                    <Col><h1>Hello World</h1></Col>
-                    <Col><h1>Hello World</h1></Col>
                 </Row>
             </Container>
         </>

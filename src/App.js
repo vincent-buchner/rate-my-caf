@@ -21,7 +21,7 @@ function App() {
           <CafPieChart />
           <Greetings />
           <ScatterPlots />
-          
+          <Quote />
         </div>
         
       </Container>
