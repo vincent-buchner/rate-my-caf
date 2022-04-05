@@ -1,6 +1,7 @@
 import { PieChart } from "react-minimal-pie-chart";
 import { Container, Row, Col } from "react-bootstrap";
 
+
 function CafPieChart() {
     return(
         <>

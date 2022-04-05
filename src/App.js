@@ -9,6 +9,7 @@ import { Nav, Navbar, NavDropdown, Container, Button } from 'react-bootstrap';
 import { PieChart } from "react-minimal-pie-chart";
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Row, Col } from 'react-bootstrap';
+import { csv } from 'd3';
 
 
 
