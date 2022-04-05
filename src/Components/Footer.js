@@ -1,5 +1,5 @@
 import { Row, Col, Container } from "react-bootstrap";
-import { BsFacebook } from "react-icons/bs";
+import { BsTwitter, BsInstagram, BsLinkedin, BsGithub, BsGoogle } from "react-icons/bs";
 
 function Footer() {
     return (
@@ -21,22 +21,16 @@ function Footer() {
                             {/* <!-- Right --> */}
                             <div>
                                 <a href="" className="me-4 text-reset">
-                                    <BsFacebook />
+                                    <BsTwitter />
                                 </a>
                                 <a href="" className="me-4 text-reset">
-                                    <i className="fab fa-twitter"></i>
+                                    <BsInstagram />
                                 </a>
                                 <a href="" className="me-4 text-reset">
-                                    <i className="fab fa-google"></i>
+                                    <BsLinkedin />
                                 </a>
                                 <a href="" className="me-4 text-reset">
-                                    <i className="fab fa-instagram"></i>
-                                </a>
-                                <a href="" className="me-4 text-reset">
-                                    <i className="fab fa-linkedin"></i>
-                                </a>
-                                <a href="" className="me-4 text-reset">
-                                    <i className="fab fa-github"></i>
+                                    <BsGithub />
                                 </a>
                             </div>
                             {/* <!-- Right --> */}
@@ -52,11 +46,14 @@ function Footer() {
                                     <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                         {/* <!-- Content --> */}
                                         <h6 className="text-uppercase fw-bold mb-4">
-                                            <i className="fas fa-gem me-3"></i>Company name
+                                            Rate My Caf
                                         </h6>
                                         <p>
-                                            Here you can use rows and columns to organize your footer content. Lorem ipsum
-                                            dolor sit amet, consectetur adipisicing elit.
+                                        Rate My Caf allows students to see whether or 
+                                        not they would like to go to the cafeteria 
+                                        based on reviews. Students can choose from a 
+                                        variety of cuisines, read reviews, and find out 
+                                        if the place is really worth visiting.
                                         </p>
                                     </div>
                                     {/* <!-- Grid column --> */}
@@ -65,19 +62,19 @@ function Footer() {
                                     <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                                         {/* <!-- Links --> */}
                                         <h6 className="text-uppercase fw-bold mb-4">
-                                            Products
+                                            LINKS
                                         </h6>
                                         <p>
-                                            <a href="#!" className="text-reset">Angular</a>
+                                            <a href="#!" className="text-reset"><i>Top Of Page</i></a>
                                         </p>
                                         <p>
-                                            <a href="#!" className="text-reset">React</a>
+                                            <a href="#!" className="text-reset">Luther College</a>
                                         </p>
                                         <p>
-                                            <a href="#!" className="text-reset">Vue</a>
+                                            <a href="#!" className="text-reset">Stats</a>
                                         </p>
                                         <p>
-                                            <a href="#!" className="text-reset">Laravel</a>
+                                            <a href="#!" className="text-reset">Submit Form</a>
                                         </p>
                                     </div>
                                     {/* <!-- Grid column --> */}
@@ -86,19 +83,13 @@ function Footer() {
                                     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                                         {/* <!-- Links --> */}
                                         <h6 className="text-uppercase fw-bold mb-4">
-                                            Useful links
+                                            About
                                         </h6>
                                         <p>
-                                            <a href="#!" className="text-reset">Pricing</a>
+                                            <a href="#!" className="text-reset">The Developer</a>
                                         </p>
                                         <p>
-                                            <a href="#!" className="text-reset">Settings</a>
-                                        </p>
-                                        <p>
-                                            <a href="#!" className="text-reset">Orders</a>
-                                        </p>
-                                        <p>
-                                            <a href="#!" className="text-reset">Help</a>
+                                            <a href="#!" className="text-reset">Learn More</a>
                                         </p>
                                     </div>
                                     {/* <!-- Grid column --> */}
@@ -109,13 +100,11 @@ function Footer() {
                                         <h6 className="text-uppercase fw-bold mb-4">
                                             Contact
                                         </h6>
-                                        <p><i className="fas fa-home me-3"></i> New York, NY 10012, US</p>
                                         <p>
-                                            <i className="fas fa-envelope me-3"></i>
-                                            info@example.com
+                                            <BsGoogle />
+                                            &emsp;info@example.com
                                         </p>
-                                        <p><i className="fas fa-phone me-3"></i> + 01 234 567 88</p>
-                                        <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
+                                        <p>Visit our social media!</p>
                                     </div>
                                     {/* <!-- Grid column --> */}
                                 </div>
@@ -126,8 +115,8 @@ function Footer() {
 
                         {/* <!-- Copyright --> */}
                         <div className="text-center p-4">
-                            © 2021 Copyright:
-                            <a className="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                            © 2022 Copyright:
+                            Rate My Caf
                         </div>
                         {/* <!-- Copyright --> */}
                     </footer>
