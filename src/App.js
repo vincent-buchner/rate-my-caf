@@ -33,7 +33,7 @@ function App() {
         <CafNavBar />
         <HeadingTextWithDate />
         <div className="chart-container">
-          <CafPieChart />
+          <CafPieChart chart_data={data}/>
           <Greetings />
           <ScatterPlots />
           <Quote />
