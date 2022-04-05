@@ -10,10 +10,14 @@ import { PieChart } from "react-minimal-pie-chart";
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Row, Col } from 'react-bootstrap';
 import { csv } from 'd3';
+import React, { useEffect, useState } from "react";
 
 
 
 function App() {
+
+  console.log(data)
+
   return (
     <>
       <Container fluid className="p-0">

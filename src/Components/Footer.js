@@ -65,16 +65,16 @@ function Footer() {
                                             LINKS
                                         </h6>
                                         <p>
-                                            <a href="#!" className="text-reset"><i>Top Of Page</i></a>
+                                            <a href="#" className="text-reset"><i>Top Of Page</i></a>
                                         </p>
                                         <p>
-                                            <a href="#!" className="text-reset">Luther College</a>
+                                            <a href="https://www.luther.edu" className="text-reset">Luther College</a>
                                         </p>
                                         <p>
-                                            <a href="#!" className="text-reset">Stats</a>
+                                            <a href="#" className="text-reset">Stats</a>
                                         </p>
                                         <p>
-                                            <a href="#!" className="text-reset">Submit Form</a>
+                                            <a href="https://forms.gle/pTHK3B3A4ba9z5RcA" className="text-reset">Submit Form</a>
                                         </p>
                                     </div>
                                     {/* <!-- Grid column --> */}

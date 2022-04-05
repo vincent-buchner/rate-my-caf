@@ -21,7 +21,7 @@ function ScatterPlots() {
         { "line": "Grill", "average_rating": 5 },
         { "line": "Simple", "average_rating": 3.1 },
         { "line": "Pizza/Pasta", "average_rating": 1.2 },
-        { "line": "Dessert", "average_rating": 4.5 },
+        { "line": "Dessert", "average_rating": 10 },
     ]
 
     return (
