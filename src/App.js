@@ -16,6 +16,15 @@ import React, { useEffect, useState } from "react";
 
 function App() {
 
+  const [data, setData] = useState([]);
+
+  let csv_link = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQNZXfIUrrmIFGH0jX1JvvYBHnKGFsgSWVhX_QfTMqR-c_0XFCbpTJ8GS063dadElo5y3ab4kawK96M/pub?gid=168020417&single=true&output=csv"
+  useEffect(() => {
+    csv(csv_link).then(data => {
+      setData(data);
+    });
+  }, []);
+
   console.log(data)
 
   return (
