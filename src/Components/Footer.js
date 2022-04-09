@@ -20,16 +20,16 @@ function Footer() {
 
                             {/* <!-- Right --> */}
                             <div>
-                                <a href="" className="me-4 text-reset">
+                                <a href="https://twitter.com/ActuallyVin" target="_blank" className="me-4 text-reset">
                                     <BsTwitter />
                                 </a>
-                                <a href="" className="me-4 text-reset">
+                                <a href="https://www.instagram.com/actual_vincent/" target="_blank" className="me-4 text-reset">
                                     <BsInstagram />
                                 </a>
-                                <a href="" className="me-4 text-reset">
+                                <a href="https://www.linkedin.com/in/vincent-buchner-28a49a213/" target="_blank" className="me-4 text-reset">
                                     <BsLinkedin />
                                 </a>
-                                <a href="" className="me-4 text-reset">
+                                <a href="https://github.com/vincent-buchner" target="_blank" className="me-4 text-reset">
                                     <BsGithub />
                                 </a>
                             </div>
@@ -68,13 +68,13 @@ function Footer() {
                                             <a href="#" className="text-reset"><i>Top Of Page</i></a>
                                         </p>
                                         <p>
-                                            <a href="https://www.luther.edu" className="text-reset">Luther College</a>
+                                            <a href="https://www.luther.edu" target="_blank" className="text-reset">Luther College</a>
                                         </p>
                                         <p>
-                                            <a href="#" className="text-reset">Stats</a>
+                                            <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vQNZXfIUrrmIFGH0jX1JvvYBHnKGFsgSWVhX_QfTMqR-c_0XFCbpTJ8GS063dadElo5y3ab4kawK96M/pub?gid=168020417&single=true&output=csv" className="text-reset">Stats</a>
                                         </p>
                                         <p>
-                                            <a href="https://forms.gle/pTHK3B3A4ba9z5RcA" className="text-reset">Submit Form</a>
+                                            <a href="https://forms.gle/pTHK3B3A4ba9z5RcA" className="text-reset" target="_blank">Submit Form</a>
                                         </p>
                                     </div>
                                     {/* <!-- Grid column --> */}
@@ -86,10 +86,10 @@ function Footer() {
                                             About
                                         </h6>
                                         <p>
-                                            <a href="#!" className="text-reset">The Developer</a>
+                                            <a href="https://www.linkedin.com/in/vincent-buchner-28a49a213/" className="text-reset" target="_blank">The Developer</a>
                                         </p>
                                         <p>
-                                            <a href="#!" className="text-reset">Learn More</a>
+                                            <a href="https://github.com/vincent-buchner" className="text-reset" target="_blank">Learn More</a>
                                         </p>
                                     </div>
                                     {/* <!-- Grid column --> */}
