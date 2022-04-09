@@ -3,16 +3,9 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../App.css';
 
-function ScatterPlots() {
+function ScatterPlots(props) {
 
-    let data = [
-        { x: 2, y: 5 },
-        { x: 4, y: 3 },
-        { x: 11, y: 2 },
-        { x: 12, y: 1 },
-        { x: 13, y: 1 },
-        { x: 13, y: 4 },
-    ];
+    let data = props.scatterPlot
 
     let data2 = [
         { "line": "Vegan", "average_rating": 3 },

@@ -9,7 +9,7 @@ import { Nav, Navbar, NavDropdown, Container, Button } from 'react-bootstrap';
 import { PieChart } from "react-minimal-pie-chart";
 import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { Row, Col } from 'react-bootstrap';
-import { csv } from 'd3';
+import { csv, map } from 'd3';
 import React, { useEffect, useState } from "react";
 
 function csvData(){
@@ -26,7 +26,6 @@ function csvData(){
 
 function pieChartData(rawData){
   let convertToInt = rawData.map(a => parseInt(a.rating))
-  console.log(convertToInt)
   let returnArray = [0, 0, 0, 0, 0]
 
   for (let i = 0; i < convertToInt.length; i++ ){
@@ -48,12 +47,21 @@ function pieChartData(rawData){
   return(returnArray);
 }
 
+function scatterPlotData (rawData){
+  let timeAndReview = rawData.map(i => ({
+    x: new Date(i.timestamp).getHours(),
+    y: parseInt(i.rating)
+  }));
+  return(timeAndReview)
+}
+
 
 
 function App() {
 
   let data = csvData()
   let pieData = pieChartData(data)
+  let scatterData = scatterPlotData(data)
 
   return (
     <>
@@ -63,7 +71,7 @@ function App() {
         <div className="chart-container">
           <CafPieChart chart_data={pieData}/>
           <Greetings />
-          <ScatterPlots />
+          <ScatterPlots scatterPlot={scatterData} />
           <Quote />
           <Footer />
         </div>

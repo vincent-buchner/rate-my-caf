@@ -8,9 +8,13 @@ function Greetings() {
                 <Row className='m-0'>
                     <Col lg={6} className="d-flex flex-column justify-content-center align-items-center py-5">
                         <div className='display-2 text-center pb-3' style={{fontFamily: "mont_bold", color: "white"}}>Find out what students think before you decide to eat there!</div>
-                        <a href='https://forms.gle/v6AoRoxMxkSUUTLT6'>
-                            <Button size="lg" variant="outline-light" target='_blank'>SUBMIT REVIEW</Button>
-                        </a>
+                        
+                            <Button href='https://docs.google.com/spreadsheets/d/e/2PACX-1vQNZXfIUrrmIFGH0jX1JvvYBHnKGFsgSWVhX_QfTMqR-c_0XFCbpTJ8GS063dadElo5y3ab4kawK96M/pub?gid=168020417&single=true&output=csv'
+                                    size="lg" 
+                                    variant="outline-light" 
+                                    target='_blank'>SUBMIT REVIEW
+                                    </Button>
+                        
                         
                     </Col>
                     <Col lg={6} className="d-flex justify-content-center align-items-center">
