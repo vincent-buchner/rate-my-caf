@@ -102,7 +102,7 @@ function Footer() {
                                         </h6>
                                         <p>
                                             <BsGoogle />
-                                            &emsp;rmc@gmail.com
+                                            &emsp;ratemycaf.suggestions@gmail.com
                                         </p>
                                         <p>Visit our social media!</p>
                                     </div>

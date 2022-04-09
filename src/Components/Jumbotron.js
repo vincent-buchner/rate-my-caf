@@ -9,7 +9,7 @@ function Greetings() {
                     <Col lg={6} className="d-flex flex-column justify-content-center align-items-center py-5">
                         <div className='display-2 text-center pb-3' style={{fontFamily: "mont_bold", color: "white"}}>Find out what students think before you decide to eat there!</div>
                         
-                            <Button href='https://docs.google.com/spreadsheets/d/e/2PACX-1vQNZXfIUrrmIFGH0jX1JvvYBHnKGFsgSWVhX_QfTMqR-c_0XFCbpTJ8GS063dadElo5y3ab4kawK96M/pub?gid=168020417&single=true&output=csv'
+                            <Button href='https://forms.gle/8duWCfQPUNGfumhN6'
                                     size="lg" 
                                     variant="outline-light" 
                                     target='_blank'>SUBMIT REVIEW

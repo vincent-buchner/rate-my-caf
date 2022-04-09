@@ -8,8 +8,8 @@ function Quote() {
                 <Row>
                     <div className='d-flex flex-column justify-content-center align-items-center my-5'>
                         <div className='display-6' style={{fontFamily: "mont_bold"}}>Wanna See More?</div>
-                        <p>Send In Your Suggestions via Email: <u>rmc@gmail.com</u></p>
-                        <p>Click <a href='#'>Here</a> for Github Repo</p>
+                        <p>Send In Your Suggestions via Email: <u>ratemycaf.suggestions@gmail.com</u></p>
+                        <p>Click <a href='https://github.com/vincent-buchner/rate-my-caf'>Here</a> for Github Repo</p>
                     </div>
                 </Row>
             </Container>

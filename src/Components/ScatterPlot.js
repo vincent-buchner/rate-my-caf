@@ -7,15 +7,7 @@ function ScatterPlots(props) {
 
     let data = props.scatterPlot
 
-    let data2 = [
-        { "line": "Vegan", "average_rating": 3 },
-        { "line": "Sandwich", "average_rating": 4.6 },
-        { "line": "Main", "average_rating": 2 },
-        { "line": "Grill", "average_rating": 5 },
-        { "line": "Simple", "average_rating": 3.1 },
-        { "line": "Pizza/Pasta", "average_rating": 1.2 },
-        { "line": "Dessert", "average_rating": 10 },
-    ]
+    let data2 = props.barGraph
 
     return (
         <>

@@ -16,7 +16,7 @@ function CafNavBar() {
                             <NavDropdown.Item href="https://menus.sodexomyway.com/BiteMenu/Menu?menuId=14809&locationId=51809001&whereami=https://luther.sodexomyway.com/dining-near-me/resident-dining" target="_blank">Lunch</NavDropdown.Item>
                             <NavDropdown.Item href="https://menus.sodexomyway.com/BiteMenu/Menu?menuId=14809&locationId=51809001&whereami=https://luther.sodexomyway.com/dining-near-me/resident-dining" target="_blank">Dinner</NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">Learn More</NavDropdown.Item>
+                            <NavDropdown.Item href="https://www.luther.edu/dining/student/caf-cam/" target="_blank">Caf Cam</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
                     <Nav>

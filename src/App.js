@@ -24,9 +24,22 @@ function csvData(){
   return(data);
 }
 
+function validateData(rawData) {
+
+  let returnArray = []
+
+  for(let i = rawData.length - 1; i >= 0; i--){
+    if (new Date(rawData[i].timestamp).getDate() === new Date().getDate() && new Date(rawData[i].timestamp).getMonth() === new Date().getMonth()){
+      console.log(rawData[i])
+      returnArray.push(rawData[i])
+    }
+  }
+  return returnArray;
+}
+
 function pieChartData(rawData){
-  let convertToInt = rawData.map(a => parseInt(a.rating))
-  let returnArray = [0, 0, 0, 0, 0]
+  let convertToInt = rawData.map(a => parseInt(a.rating));
+  let returnArray = [0, 0, 0, 0, 0];
 
   for (let i = 0; i < convertToInt.length; i++ ){
     if(convertToInt[i] == 1){
@@ -49,19 +62,61 @@ function pieChartData(rawData){
 
 function scatterPlotData (rawData){
   let timeAndReview = rawData.map(i => ({
-    x: new Date(i.timestamp).getHours(),
+    x: new Date(i.timestamp).getHours() + (new Date(i.timestamp).getMinutes() / 60),
     y: parseInt(i.rating)
   }));
   return(timeAndReview)
 }
 
+function barGraphData(rawData){
+  let lineAndAverage = rawData.map(i => i.favorite_line);
+  // Vegan, Sandwich, Main, Grill, Simple, Pizza, Dessert
+  let lineRatingsArray = [0, 0, 0, 0, 0, 0, 0]
 
+  for(let i = 0; i < lineAndAverage.length; i++){
+    if(lineAndAverage[i] === "Vegan"){
+      lineRatingsArray[0] += 1
+    } else if(lineAndAverage[i] === "Sandwich"){
+      lineRatingsArray[1] += 1
+    } else if(lineAndAverage[i] === "Main"){
+      lineRatingsArray[2] += 1
+    } else if(lineAndAverage[i] === "Grill"){
+      lineRatingsArray[3] += 1
+    } else if(lineAndAverage[i] === "Simple"){
+      lineRatingsArray[4] += 1
+    } else if(lineAndAverage[i] === "Pasta and/or Pizza"){
+      lineRatingsArray[5] += 1
+    } else if(lineAndAverage[i] === "Dessert"){
+      lineRatingsArray[6] += 1
+    } else{
+      console.log("Oh no! Something's wrong!")
+    }
+  }
+
+  return(
+    [
+      {"line": "Vegan", "average_rating": lineRatingsArray[0]},
+      {"line": "Sandwich", "average_rating": lineRatingsArray[1]},
+      {"line": "Main", "average_rating": lineRatingsArray[2]},
+      {"line": "Grill", "average_rating": lineRatingsArray[3]},
+      {"line": "Simple", "average_rating": lineRatingsArray[4]},
+      {"line": "Pizza/Pasta", "average_rating": lineRatingsArray[5]},
+      {"line": "Dessert", "average_rating": lineRatingsArray[6]},
+    ]
+  );
+
+}
 
 function App() {
 
-  let data = csvData()
-  let pieData = pieChartData(data)
-  let scatterData = scatterPlotData(data)
+  let data = csvData();
+  let correctData = validateData(data);
+  let pieData = pieChartData(correctData);
+  let scatterData = scatterPlotData(correctData);
+  let barData = barGraphData(correctData);
+  
+  
+ 
 
   return (
     <>
@@ -71,7 +126,7 @@ function App() {
         <div className="chart-container">
           <CafPieChart chart_data={pieData}/>
           <Greetings />
-          <ScatterPlots scatterPlot={scatterData} />
+          <ScatterPlots scatterPlot={scatterData} barGraph={barData}/>
           <Quote />
           <Footer />
         </div>
