@@ -16,11 +16,11 @@ function CafPieChart(props) {
                 animationDuration={1000}
                 animationEasing={"ease-out"}
                 data={[
-                    {key: 1, value: props.chart_data[0] + 1, color: '#0083e2'},
-                    {key: 2, value: props.chart_data[1] + 1, color: '#0079d1'},
+                    {key: 1, value: props.chart_data[4] + 1, color: '#0083e2'},
+                    {key: 2, value: props.chart_data[3] + 1, color: '#0079d1'},
                     {key: 3, value: props.chart_data[2] + 1, color: '#0072c5'},
-                    {key: 4, value: props.chart_data[3] + 1, color: '#0064ad'},
-                    {key: 5, value: props.chart_data[4] + 1, color: '#005a9c'},
+                    {key: 4, value: props.chart_data[1] + 1, color: '#0064ad'},
+                    {key: 5, value: props.chart_data[0] + 1, color: '#005a9c'},
                 ]}
             />
 
