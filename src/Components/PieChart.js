@@ -26,21 +26,21 @@ function CafPieChart(props) {
 
             {/* DATA SCALE */}
             <div className="d-flex justify-content-center">
-                <div style={{height: "fit-content", width: "300px", backgroundColor: "#D3D3D3", borderRadius: "10px"}}>
+                <div style={{width: "300px", backgroundColor: "#D3D3D3", borderRadius: "10px"}}>
                     <Container fluid>
                         <Row>
-                            <Col className="d-flex justify-content-between">
+                            <Col className="d-flex justify-content-between align-items-center">
                                 <p>Just Get Marty's</p>
                                 <p>Pretty Good</p>
                             </Col>
                         </Row>
                         <Row>
                             <Col className="d-flex justify-content-around align-items-center py-2">
-                                <span style={{width: "20px", height: "20px", backgroundColor: '#005a9c', borderRadius: "3px" }}/>
-                                <span style={{width: "20px", height: "20px", backgroundColor: '#0064ad', borderRadius: "3px" }}/>
-                                <span style={{width: "20px", height: "20px", backgroundColor: '#0072c5', borderRadius: "3px" }}/>
-                                <span style={{width: "20px", height: "20px", backgroundColor: '#0079d1', borderRadius: "3px" }}/>
-                                <span style={{width: "20px", height: "20px", backgroundColor: '#0083e2', borderRadius: "3px" }}/>
+                                    <div style={{width: "20px", height: "20px", backgroundColor: '#005a9c', borderRadius: "3px" }}/>
+                                    <div style={{width: "20px", height: "20px", backgroundColor: '#0064ad', borderRadius: "3px" }}/>
+                                    <div style={{width: "20px", height: "20px", backgroundColor: '#0072c5', borderRadius: "3px" }}/>
+                                    <div style={{width: "20px", height: "20px", backgroundColor: '#0079d1', borderRadius: "3px" }}/>
+                                    <div style={{width: "20px", height: "20px", backgroundColor: '#0083e2', borderRadius: "3px" }}/>
                             </Col>
                         </Row>
                     </Container>

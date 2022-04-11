@@ -125,11 +125,11 @@ function App() {
         <HeadingTextWithDate />
         <div className="chart-container">
           <CafPieChart chart_data={pieData}/>
-          <Greetings />
-          <ScatterPlots scatterPlot={scatterData} barGraph={barData}/>
-          <Quote />
-          <Footer />
         </div>
+        <Greetings />
+        <ScatterPlots scatterPlot={scatterData} barGraph={barData}/>
+        <Quote />
+        <Footer />
         
       </Container>
       
