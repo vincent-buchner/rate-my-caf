@@ -20,3 +20,6 @@
 ## March 1st, 2022
 ### Started Project
 React Template is started, UI design is to be done.
+
+### Taken Down From Network
+April 11th, 2022 - After three days of being live, RMC was taken down by the network. Discuss to get the site up and running is on going. Updates to come.
