@@ -30,7 +30,6 @@ function validateData(rawData) {
 
   for(let i = rawData.length - 1; i >= 0; i--){
     if (new Date(rawData[i].timestamp).getDate() === new Date().getDate() && new Date(rawData[i].timestamp).getMonth() === new Date().getMonth()){
-      console.log(rawData[i])
       returnArray.push(rawData[i])
     }
   }
