@@ -33,10 +33,11 @@ function ScatterPlots(props) {
                                 </ScatterChart>
                             </ResponsiveContainer>
                         </Col>
-
+                        
+                        {/* START OF BAR GRAPH */}
                         <Col md={6} className="d-flex flex-column justify-content-center align-items-center">
                             <h1 style={{ fontFamily: "mont_bold" }}>Line Favorites</h1>
-                            <ResponsiveContainer width="100%" height="90%">
+                            <ResponsiveContainer width="100%" height="90%" minHeight={400}>
                                 <BarChart width={700} height={300} data={data2}>
                                     <CartesianGrid strokeDasharray="3 3" />
                                     <XAxis dataKey="line" />

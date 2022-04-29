@@ -24,6 +24,7 @@ function csvData(){
   return(data);
 }
 
+// Gets the correct data for that given day
 function validateData(rawData) {
 
   let returnArray = []
@@ -36,6 +37,7 @@ function validateData(rawData) {
   return returnArray;
 }
 
+// Calculates what's need for pie Chart Data
 function pieChartData(rawData){
   let convertToInt = rawData.map(a => parseInt(a.rating));
   let returnArray = [0, 0, 0, 0, 0];
@@ -59,6 +61,7 @@ function pieChartData(rawData){
   return(returnArray);
 }
 
+// Calculates what's need for scatter plot
 function scatterPlotData (rawData){
   let timeAndReview = rawData.map(i => ({
     x: new Date(i.timestamp).getHours() + (new Date(i.timestamp).getMinutes() / 60),
@@ -67,6 +70,7 @@ function scatterPlotData (rawData){
   return(timeAndReview)
 }
 
+// Calculates bar graph data
 function barGraphData(rawData){
   let lineAndAverage = rawData.map(i => i.favorite_line);
   // Vegan, Sandwich, Main, Grill, Simple, Pizza, Dessert
@@ -103,7 +107,6 @@ function barGraphData(rawData){
       {"line": "Dessert", "average_rating": lineRatingsArray[6]},
     ]
   );
-
 }
 
 function App() {
@@ -113,9 +116,6 @@ function App() {
   let pieData = pieChartData(correctData);
   let scatterData = scatterPlotData(correctData);
   let barData = barGraphData(correctData);
-  
-  
- 
 
   return (
     <>
@@ -129,7 +129,6 @@ function App() {
         <ScatterPlots scatterPlot={scatterData} barGraph={barData}/>
         <Quote />
         <Footer />
-        
       </Container>
       
     </>
