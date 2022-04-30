@@ -3,6 +3,7 @@ import HeadingTextWithDate from "./Components/HeadingWithDate";
 import CafPieChart from "./Components/PieChart"
 import Greetings from "./Components/Jumbotron"
 import ScatterPlots from "./Components/ScatterPlot";
+import MeetWorker from "./Components/MeetWorker";
 import Quote from "./Components/Quote";
 import Footer from "./Components/Footer";
 import { Nav, Navbar, NavDropdown, Container, Button } from 'react-bootstrap';
@@ -127,6 +128,7 @@ function App() {
         </div>
         <Greetings />
         <ScatterPlots scatterPlot={scatterData} barGraph={barData}/>
+        <MeetWorker name={"Cam, The Sandwich Man"} img={"https://images.unsplash.com/photo-1577106263724-2c8e03bfe9cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"} />
         <Quote />
         <Footer />
       </Container>
